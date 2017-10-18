@@ -5,8 +5,9 @@ var ReactNative = require('react-native');
 var Button = require('./button');
 var FadeInView = require('./fade_in_view');
 var { Modal, StyleSheet, TouchableOpacity, View } = ReactNative;
+var createReactClass = require('create-react-class');
 
-var ActionModal = React.createClass({
+var ActionModal = createReactClass({
   render: function() {
     return (
       <FadeInView visible={this.props.modalVisible} backgroundColor={this.props.backgroundColor}>
