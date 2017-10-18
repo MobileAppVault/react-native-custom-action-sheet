@@ -4,8 +4,9 @@ var React = require('react');
 var ReactNative = require('react-native');
 var { Animated, Dimensions, StyleSheet, View } = ReactNative;
 var window = Dimensions.get('window');
+var createReactClass = require('create-react-class');
 
-var FadeInView = React.createClass({
+var FadeInView = createReactClass({
   getInitialState: function() {
     return {
       fadeAnim: new Animated.Value(0)
