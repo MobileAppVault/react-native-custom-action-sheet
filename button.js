@@ -3,8 +3,9 @@
 var React = require('react');
 var ReactNative = require('react-native');
 var { StyleSheet, Text, TouchableOpacity, View } = ReactNative;
+var createReactClass = require('create-react-class');
 
-var Button = React.createClass({
+var Button = createReactClass({
   render: function() {
     return (
       <TouchableOpacity style={styles.button} onPress={this.props.onPress}>
